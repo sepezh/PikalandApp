@@ -1,6 +1,14 @@
 import React, {Component} from "react";
-import {Text} from "react-native";
-import {Header, Icon, Left, Container, Right, Content} from "native-base";
+import {
+  Header,
+  Icon,
+  Left,
+  Container,
+  Content,
+  Input,
+  Text,
+  Item,
+} from "native-base";
 import {DrawerActions} from "@react-navigation/native";
 
 class SearchScreen extends Component {
@@ -8,15 +16,21 @@ class SearchScreen extends Component {
     const {navigation} = this.props;
     return (
       <Container>
-        <Header>
-          <Left>
+        <Header
+          searchBar
+          rounded
+          style={{backgroundColor: "rgb(255, 255, 255)"}}>
+          <Left style={{flex: null, marginRight: 10}}>
             <Icon
               name="menu"
-              style={{color: "white"}}
+              style={{color: "Black"}}
               onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
             />
           </Left>
-          <Right />
+          <Item style={{backgroundColor: "rgb(199, 199, 204)"}}>
+            <Input placeholder="Search" />
+            <Icon name="search" />
+          </Item>
         </Header>
         <Content>
           <Text>This is Search Page</Text>

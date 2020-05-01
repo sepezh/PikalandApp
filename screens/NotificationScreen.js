@@ -8,11 +8,11 @@ class NotificationScreen extends Component {
     const {navigation} = this.props;
     return (
       <Container>
-        <Header>
+        <Header style={{backgroundColor: "rgb(255, 255, 255)"}}>
           <Left>
             <Icon
               name="menu"
-              style={{color: "white"}}
+              style={{color: "black"}}
               onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
             />
           </Left>
