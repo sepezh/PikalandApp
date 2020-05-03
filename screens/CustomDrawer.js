@@ -24,7 +24,7 @@ function CustomDrawer(props) {
         <DrawerContentScrollView {...props}>
           <View>
             <Image
-              source={require("./../assets/Melanie-Mikecz-Pikaland.jpg")}
+              source={require("../assets/Melanie-Mikecz-Pikaland.jpg")}
               resizeMode={"cover"}
               style={{width: "100%", height: 250}}
             />

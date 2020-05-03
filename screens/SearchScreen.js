@@ -16,18 +16,15 @@ class SearchScreen extends Component {
     const {navigation} = this.props;
     return (
       <Container>
-        <Header
-          searchBar
-          rounded
-          style={{backgroundColor: "rgb(255, 255, 255)"}}>
+        <Header searchBar rounded style={{backgroundColor: "#fff"}}>
           <Left style={{flex: null, marginRight: 10}}>
             <Icon
               name="menu"
-              style={{color: "Black"}}
+              style={{color: "#000"}}
               onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
             />
           </Left>
-          <Item style={{backgroundColor: "rgb(199, 199, 204)"}}>
+          <Item style={{backgroundColor: "#f4f4f4"}}>
             <Input placeholder="Search" />
             <Icon name="search" />
           </Item>
