@@ -4,6 +4,7 @@ import HomeScreen from "./HomeScreen";
 import SearchScreen from "./SearchScreen";
 import NotificationScreen from "./NotificationScreen";
 import {Icon} from "native-base";
+import {StyleSheet} from "react-native";
 
 const Tab = createBottomTabNavigator();
 
@@ -14,8 +15,8 @@ function CustomTab(props) {
         name="Home"
         component={HomeScreen}
         options={{
-          tabBarIcon: ({focused, color, size}) => (
-            <Icon name="home" style={{fontSize: 24, color: color}} />
+          tabBarIcon: ({color}) => (
+            <Icon name="home" style={(style.iconSize, {color: color})} />
           ),
         }}
       />
@@ -23,8 +24,8 @@ function CustomTab(props) {
         name="Search"
         component={SearchScreen}
         options={{
-          tabBarIcon: ({focused, color, size}) => (
-            <Icon name="search" style={{fontSize: 24, color: color}} />
+          tabBarIcon: ({color}) => (
+            <Icon name="search" style={(style.iconSize, {color: color})} />
           ),
         }}
       />
@@ -32,13 +33,22 @@ function CustomTab(props) {
         name="Notification"
         component={NotificationScreen}
         options={{
-          tabBarIcon: ({focused, color, size}) => (
-            <Icon name="notifications" style={{fontSize: 24, color: color}} />
+          tabBarIcon: ({color}) => (
+            <Icon
+              name="notifications"
+              style={(style.iconSize, {color: color})}
+            />
           ),
         }}
       />
     </Tab.Navigator>
   );
 }
+
+const style = StyleSheet.create({
+  iconSize: {
+    fontSize: 24,
+  },
+});
 
 export default CustomTab;

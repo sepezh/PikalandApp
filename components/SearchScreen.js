@@ -1,14 +1,5 @@
 import React, {Component} from "react";
-import {
-  Header,
-  Icon,
-  Left,
-  Container,
-  Content,
-  Input,
-  Text,
-  Item,
-} from "native-base";
+import {Header, Icon, Left, Container, Content, Input, Item} from "native-base";
 import {DrawerActions} from "@react-navigation/native";
 
 class SearchScreen extends Component {
@@ -29,9 +20,7 @@ class SearchScreen extends Component {
             <Icon name="search" />
           </Item>
         </Header>
-        <Content>
-          <Text>This is Search Page</Text>
-        </Content>
+        <Content />
       </Container>
     );
   }

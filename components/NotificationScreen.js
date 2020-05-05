@@ -1,14 +1,13 @@
 import React, {Component} from "react";
-import {Text} from "react-native";
 import {Header, Icon, Left, Container, Right, Content} from "native-base";
 import {DrawerActions} from "@react-navigation/native";
 
-class HomeScreen extends Component {
+class NotificationScreen extends Component {
   render() {
     const {navigation} = this.props;
     return (
       <Container>
-        <Header style={{backgroundColor: "#fff)"}}>
+        <Header style={{backgroundColor: "#fff"}}>
           <Left>
             <Icon
               name="menu"
@@ -18,12 +17,10 @@ class HomeScreen extends Component {
           </Left>
           <Right />
         </Header>
-        <Content>
-          <Text>This is Home Page</Text>
-        </Content>
+        <Content />
       </Container>
     );
   }
 }
 
-export default HomeScreen;
+export default NotificationScreen;

@@ -1,10 +1,11 @@
 import React, {Component} from "react";
-import {Text, Animated, Easing} from "react-native";
+import {Animated, Easing} from "react-native";
 import {Container, Content, View} from "native-base";
 
 class ProfileScreen extends Component {
   constructor() {
     super();
+
     this.spinValue = new Animated.Value(0);
   }
 
@@ -27,10 +28,10 @@ class ProfileScreen extends Component {
       inputRange: [0, 1],
       outputRange: ["0deg", "360deg"],
     });
+
     return (
       <Container>
         <Content>
-          <Text>This is Profile Page</Text>
           <View style={{marginLeft: 70, marginTop: 70}}>
             <Animated.Image
               style={{
