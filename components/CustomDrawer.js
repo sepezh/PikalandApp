@@ -6,9 +6,9 @@ import {
 } from "@react-navigation/drawer";
 import {Image, View, useWindowDimensions} from "react-native";
 import {Icon} from "native-base";
-import BookmarkScreen from "./BookmarkScreen";
-import ProfileScreen from "./ProfileScreen";
-import SettingScreen from "./SettingScreen";
+import BookmarkScreen from "./drawerScreens/BookmarkScreen";
+import ProfileScreen from "./drawerScreens/ProfileScreen";
+import SettingScreen from "./drawerScreens/SettingScreen";
 import CustomTab from "./CustomTab";
 
 const Drawer = createDrawerNavigator();

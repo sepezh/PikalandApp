@@ -39,7 +39,7 @@ class ProfileScreen extends Component {
                 height: 200,
                 transform: [{rotate: spin}],
               }}
-              source={require("../assets/Mitnik-Miller.png")}
+              source={require("../../assets/Mitnik-Miller.png")}
             />
           </View>
         </Content>

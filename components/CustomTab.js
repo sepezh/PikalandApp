@@ -1,8 +1,8 @@
 import * as React from "react";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
-import HomeScreen from "./HomeScreen";
-import SearchScreen from "./SearchScreen";
-import NotificationScreen from "./NotificationScreen";
+import HomeScreen from "./tabScreens/HomeScreen";
+import SearchScreen from "./tabScreens/SearchScreen";
+import NotificationScreen from "./tabScreens/NotificationScreen";
 import {Icon} from "native-base";
 import {StyleSheet} from "react-native";
 

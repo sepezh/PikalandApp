@@ -27,7 +27,7 @@ class BookmarkScreen extends Component {
             height: 200,
             transform: [{scale: this.springValue}],
           }}
-          source={require("../assets/Mitnik-Miller.png")}
+          source={require("../../assets/Mitnik-Miller.png")}
         />
         <Button info onPress={this.spring.bind(this)} style={{padding: 10}}>
           <Text>Click to me</Text>
