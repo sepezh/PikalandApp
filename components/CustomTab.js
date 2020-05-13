@@ -3,6 +3,7 @@ import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 import HomeScreen from "./tabScreens/HomeScreen";
 import SearchScreen from "./tabScreens/SearchScreen";
 import NotificationScreen from "./tabScreens/NotificationScreen";
+import LoginScreen from "./tabScreens/LoginScreen";
 import {Icon} from "native-base";
 import {StyleSheet} from "react-native";
 
@@ -36,6 +37,19 @@ function CustomTab(props) {
           tabBarIcon: ({color}) => (
             <Icon
               name="notifications"
+              style={(style.iconSize, {color: color})}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Login"
+        component={LoginScreen}
+        options={{
+          tabBarIcon: ({color}) => (
+            <Icon
+              type="MaterialCommunityIcons"
+              name="login"
               style={(style.iconSize, {color: color})}
             />
           ),

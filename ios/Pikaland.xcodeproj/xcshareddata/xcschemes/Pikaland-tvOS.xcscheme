@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "MaseRasti-tvOS.app"
-               BlueprintName = "MaseRasti-tvOS"
-               ReferencedContainer = "container:MaseRasti.xcodeproj">
+               BuildableName = "Pikaland-tvOS.app"
+               BlueprintName = "Pikaland-tvOS"
+               ReferencedContainer = "container:Pikaland.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "MaseRasti-tvOSTests.xctest"
-               BlueprintName = "MaseRasti-tvOSTests"
-               ReferencedContainer = "container:MaseRasti.xcodeproj">
+               BuildableName = "Pikaland-tvOSTests.xctest"
+               BlueprintName = "Pikaland-tvOSTests"
+               ReferencedContainer = "container:Pikaland.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "MaseRasti-tvOS.app"
-            BlueprintName = "MaseRasti-tvOS"
-            ReferencedContainer = "container:MaseRasti.xcodeproj">
+            BuildableName = "Pikaland-tvOS.app"
+            BlueprintName = "Pikaland-tvOS"
+            ReferencedContainer = "container:Pikaland.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "MaseRasti-tvOS.app"
-            BlueprintName = "MaseRasti-tvOS"
-            ReferencedContainer = "container:MaseRasti.xcodeproj">
+            BuildableName = "Pikaland-tvOS.app"
+            BlueprintName = "Pikaland-tvOS"
+            ReferencedContainer = "container:Pikaland.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

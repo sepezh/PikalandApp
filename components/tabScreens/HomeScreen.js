@@ -1,18 +1,14 @@
 import React, {Component} from "react";
-import {
-  Header,
-  Icon,
-  Thumbnail,
-  Left,
-  Container,
-  Right,
-  Content,
-} from "native-base";
+import {Header, Icon, Left, Container, Right, Content} from "native-base";
 import {DrawerActions} from "@react-navigation/native";
+import CustomCard from "../CustomCard";
 
 class HomeScreen extends Component {
   render() {
     const {navigation} = this.props;
+    const images = {
+      imgURI: "https://placeimg.com/640/480/architecture",
+    };
     return (
       <Container>
         <Header style={{backgroundColor: "#fff)"}}>
@@ -22,15 +18,15 @@ class HomeScreen extends Component {
               style={{color: "#000"}}
               onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
             />
-            {/* <Thumbnail
-              small
-              source={require("../assets/Profile.jpg")}
-              onCli={() => navigation.dispatch(DrawerActions.openDrawer())}
-            /> */}
           </Left>
           <Right />
         </Header>
-        <Content />
+        <Content>
+          <CustomCard imgURI={images.imgURI + "?t=1"} />
+          <CustomCard imgURI={images.imgURI + "?t=3"} />
+          <CustomCard imgURI={images.imgURI + "?t=5"} />
+          <CustomCard imgURI={images.imgURI + "?t=9"} />
+        </Content>
       </Container>
     );
   }

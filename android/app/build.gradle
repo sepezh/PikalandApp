@@ -129,7 +129,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.maserasti"
+        applicationId "com.pikaland"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

@@ -10,6 +10,7 @@ import BookmarkScreen from "./drawerScreens/BookmarkScreen";
 import ProfileScreen from "./drawerScreens/ProfileScreen";
 import SettingScreen from "./drawerScreens/SettingScreen";
 import CustomTab from "./CustomTab";
+import MyIdeasScreen from "./drawerScreens/MyIdeasScreen";
 
 const Drawer = createDrawerNavigator();
 
@@ -45,6 +46,18 @@ function CustomDrawer(props) {
               )}
             />
             <DrawerItem
+              label="My Ideas"
+              onPress={() => props.navigation.navigate("Ideas")}
+              icon={({focused, color, size}) => (
+                <Icon
+                  type="FontAwesome"
+                  color={color}
+                  size={size}
+                  name="plus"
+                />
+              )}
+            />
+            <DrawerItem
               label="Settings"
               onPress={() => props.navigation.navigate("Setting")}
               icon={({focused, color, size}) => (
@@ -58,6 +71,7 @@ function CustomDrawer(props) {
       <Drawer.Screen name="Bookmark" component={BookmarkScreen} />
       <Drawer.Screen name="Profile" component={ProfileScreen} />
       <Drawer.Screen name="Setting" component={SettingScreen} />
+      <Drawer.Screen name="Ideas" component={MyIdeasScreen} />
     </Drawer.Navigator>
   );
 }

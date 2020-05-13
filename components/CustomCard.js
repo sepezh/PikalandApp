@@ -1,18 +1,19 @@
-import React, {Component} from "react";
+import React from "react";
 import {Image} from "react-native";
 import {Card, CardItem, Body, Left, Button, Icon, Text} from "native-base";
 
-const CustomCard = () => {
+const CustomCard = props => {
   return (
     <Card>
       <CardItem style={{height: 280}}>
         <Body>
           <Image
-            source={{uri: "https://placeimg.com/640/480/any"}}
+            source={{uri: props.imgURI}}
             style={{
-              width: 320,
+              width: "100%",
               height: 250,
               flex: 1,
+              borderRadius: 3,
               alignItems: "center",
               justifyContent: "center",
             }}
